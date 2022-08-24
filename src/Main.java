@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         printLeapYear(2024);
         System.out.println();
-        printClient(5, LocalDate.now().getYear());
+        printClient(1, LocalDate.now().getYear());
         System.out.println();
         System.out.println("Потребуется дней: " + calculateDeliveryDays(78));
 
@@ -20,24 +20,27 @@ public class Main {
     }
     // Task 2
     private static void printClient(int oc, int currentYear) {
-            switch (oc) {
-                case 1 :
-                    if (currentYear >= 2015) {
-                    System.out.println("Установите версию приложения для Android по ссылке.");
-                    } else {
-                    System.out.println("Установите облегченную версию приложения для Android по ссылке.");
-                    }
-                break;
-                case 0 :
-                    if (currentYear >= 2015) {
-                        System.out.println("Установите версию приложения для iOS по ссылке.");
-                    } else {
-                        System.out.println("Установите облегченную версию приложения для iOS по ссылке.");
-                    }
-                break;
-                default :
-                    System.out.println("Ошибка!");
-            }
+        if (currentYear >= 2015) {
+            System.out.print("Установите версию приложения для ");
+        } else {
+            System.out.print("Установите облегченную версию приложения для ");
+        }
+        if (oc == 0) {
+            System.out.println("iOS по ссылке.");
+        } else {
+            System.out.println("Android по ссылке.");
+        }
+                    //if (currentYear >= 2015) {
+                    //System.out.println("Установите версию приложения для Android по ссылке.");
+                    //} else {
+                    //System.out.println("Установите облегченную версию приложения для Android по ссылке.");
+                    //}
+
+                    //if (currentYear >= 2015) {
+                        //System.out.println("Установите версию приложения для iOS по ссылке.");
+                    //} else {
+                       // System.out.println("Установите облегченную версию приложения для iOS по ссылке.");
+                    //}
 
     }
     // Task 3
