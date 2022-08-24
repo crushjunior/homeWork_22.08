@@ -30,17 +30,6 @@ public class Main {
         } else {
             System.out.println("Android по ссылке.");
         }
-                    //if (currentYear >= 2015) {
-                    //System.out.println("Установите версию приложения для Android по ссылке.");
-                    //} else {
-                    //System.out.println("Установите облегченную версию приложения для Android по ссылке.");
-                    //}
-
-                    //if (currentYear >= 2015) {
-                        //System.out.println("Установите версию приложения для iOS по ссылке.");
-                    //} else {
-                       // System.out.println("Установите облегченную версию приложения для iOS по ссылке.");
-                    //}
 
     }
     // Task 3
